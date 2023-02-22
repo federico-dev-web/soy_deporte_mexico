@@ -12,25 +12,27 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-none">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/img/logo.jpg" alt="Logo" class="logo_navbar">
-                </a>
+                <div class="navbar_logo">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/logo.jpg" alt="Logo" class="logo_navbar">
+                    </a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav w-100 justify-content-around">
+                    <ul class="navbar-nav w-100 justify-content-around mx-5">
                         <li class="nav-item active">
-                            <a class="nav-link nav_item" href="#">Inicio</a>
+                            <a class="nav-link nav_item" href="#top">Inicio</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link nav_item" href="#">¿Quienes somos?</a>
+                            <a class="nav-link nav_item" href="#section_quienes_somos">¿Quienes somos?</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link nav_item" href="#">Deportes</a>
+                            <a class="nav-link nav_item" href="#section_deportes">Deportes</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link nav_item" href="#">Contacto</a>
+                            <a class="nav-link nav_item" href="#section_contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -38,105 +40,104 @@
         </nav>
     </header>
 
-    <section class="descripcion">
-        Descipción/Presentación sobre la organización
-        <img src="./assets/img/futbol-americano.png" alt="" class="imagen_descripcion">
+<!--  Seccion de inicio -->
+
+    <section id="section_descripcion" class="descripcion">
+            <div class="row text-center d-flex justify-content-center">
+                <div class="container-fluid col-md p-5 text-start">
+                    <h2 class="descripcion__div__title">Acompañanos a implusar deportistas</h2>
+                    <br>
+                    <p class="descripcion__div__text w-100%">Creemos que algunos talentos necesitan de nuestro apoyo para llegar aún más lejos, entre todos podemos lograrlo.</p>
+                    <br>
+                    <a href="#section_contacto"><button class="btn btn-info">Contáctanos</button></a>
+                </div>
+
+                <div class="container-fluid col-md d-flex">
+                    <img src="./assets/img/futbol-americano.png" alt="" class="imagen_descripcion m-auto">
+                </div>
+            </div>
     </section>
 
-    <section>
+
+
+    <section id="section_descripcion" class="descripcion">
+        <div class="row text-center d-flex justify-content-center">
+            <div class="container-fluid col-md p-5 text-start">
+                <h2 class="descripcion__div__title">Acompañanos a implusar deportistas</h2>
+                <br>
+                <p class="descripcion__div__text w-100%">Creemos que algunos talentos necesitan de nuestro apoyo para llegar aún más lejos, entre todos podemos lograrlo.</p>
+                <br>
+                <a href="#section_contacto"><button class="btn btn-info">Contáctanos</button></a>
+            </div>
+
+            <div class="container-fluid col-md d-flex">
+                <div class="Ellipse4 d-flex">
+                    <div class="Ellipse3 d-flex">
+                        <img src="./assets/img/futbol-americano.png" alt="" class="imagen_descripcion m-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--  Seccion de ¿Quienes somos? -->
+
+    <section id="section_quienes_somos" style="height: 80vh;">
+        ¿Quiene somos?
+    </section>
+
+<!--  Seccion de Deportes -->
+
+    <section id="section_deportes" style="height: 80vh;">
         Deportes
     </section>
 
-    <section>
+<!--  Seccion de Contacto -->
+
+    <section id="section_contacto" style="height: 80vh;">
         Contacto
     </section>
 
-    <footer class="text-center text-white" style="background-color: #0F70B4">
-        <!-- Grid container -->
+
+<!--  Footer -->
+
+    <footer class="text-center text-white">
         <div class="container mb-0">
-            <!-- Section: Links -->
             <div class="mt-5">
-                <!-- Grid row-->
                 <div class="row text-center d-flex justify-content-center pt-5">
-                    <!-- Grid column -->
                     <div class="col-md-2">
-                        <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!" class="text-white">Inicio</a>
-                        </h6>
+                        <a href="https://instagram.com/" target="_blank" class="text-white"><img class="footer_logo" src="./assets/icons/instagram.png" alt="instagram link"></a>
                     </div>
-                    <!-- Grid column -->
-            
-                    <!-- Grid column -->
                     <div class="col-md-2">
-                        <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!" class="text-white">Quiene somos</a>
-                        </h6>
+                            <a href="https://facebook.com/" target="_blank" class="text-white"><img class="footer_logo" src="./assets/icons/facebook.png" alt="facebook link"></a>
                     </div>
-                    <!-- Grid column -->
-            
-                    <!-- Grid column -->
                     <div class="col-md-2">
-                        <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!" class="text-white">Deportes</a>
-                        </h6>
+                            <a href="https://twitter.com/" target="_blank" class="text-white"><img class="footer_logo" src="./assets/icons/twitter.png" alt="twitter link"></a>
                     </div>
-                    <!-- Grid column -->
-            
-                    <!-- Grid column -->
-                    <div class="col-md-2">
-                        <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!" class="text-white">Contacto</a>
-                        </h6>
-                    </div>
-                    <!-- Grid column -->
                 </div>
-            <!-- Grid row-->
             </div>
-            <!-- Section: Links -->
-    
-            <hr class="my-5" />
-    
-            <!-- Section: Text -->
+
+            <hr class="my-5 footer_text" />
+
             <div class="mb-5">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-lg-8">
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                    distinctio earum repellat quaerat voluptatibus placeat nam,
-                    commodi optio pariatur est quia magnam eum harum corrupti
-                    dicta, aliquam sequi voluptate quas.
-                    </p>
+                    <div>
+                        <p class="footer_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                        distinctio earum repellat quaerat voluptatibus placeat nam.
+                        </p>
                     </div>
                 </div>
             </div>
-            <!-- Section: Text -->
-    
-            <!-- Section: Social -->
             <div class="text-center">
-                <a href="" class="text-white me-4">
-                <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="text-white me-4">
-                <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="text-white me-4">
-                <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="text-white me-4">
-                <i class="fab fa-instagram"></i>
-                </a>
-                <a href="" class="text-white me-4">
-                <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="" class="text-white me-4">
-                <i class="fab fa-github"></i>
-                </a>
+                <br>
             </div>
-            <!-- Section: Social -->
         </div>
-        <!-- Grid container -->
-    
     </footer>
+
+<!--  Icono whatsapp -->
+
+    <a href="https://whatsapp.com/" target="_blank"><img src="./assets/icons/whatsapp.png" alt="whatsapp link" class="whatsapp_icon"></a>
 
     <script src="./libs/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
     
