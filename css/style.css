@@ -1,0 +1,47 @@
+
+/* 
+
+verde		94C021
+celeste 	2DAAE1
+azul		0F70B4
+naranja	    FFA566 
+
+*/
+
+header {
+    background-color: #F8F8F8;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    color: #0f70b4;
+}
+
+.nav_item {
+    color: #0f70b4;
+}
+
+.logo_navbar {
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    margin-top: 120px;
+    background: linear-gradient(168.11deg, #4FC1F1 30.44%, #C4FFD5 57.43%, #9DF6E1 89.99%);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+
+.imagen_descripcion {
+    height: 300px;
+}
