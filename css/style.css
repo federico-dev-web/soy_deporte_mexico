@@ -68,10 +68,16 @@ nav {
 }
 
 section {
+    margin-top: 120px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
+}
+
+.section--h2 {
+    color: #0F70B4;
+    font-weight: 650;
 }
 
 
@@ -139,3 +145,38 @@ footer {
     background: rgba(0, 111, 207, 0.54);
 }
 /*--------------- PROBANDO ---------------*/
+
+
+
+/*--------------- Seccion ¿Quienes somos? ---------------*/
+
+.section_quienes_somos--h3 {
+    color: #FF8835;
+    font-weight: 600;
+}
+
+.section_quienes_somos--icon {
+    height: 45px;
+    width: 45px;
+}
+
+.section_quienes_somos--text {
+    color: #212529;
+    font-size: min(6vw, 18px);
+}
+
+
+/*--------------- Seccion Nuestro Objetivo ---------------*/
+
+.section_nuestro_objetivo--bg {
+    background-image: url(../assets/img/futbol-mexico.png);
+    background-position-x: 20% ;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+.section_nuestro_objetivo--ht {
+    height: 80vh;
+}
+
+/*---------------     ---------------*/
