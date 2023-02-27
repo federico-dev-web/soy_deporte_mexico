@@ -277,6 +277,7 @@ footer {
     right: 10%;
     bottom: 10%;
     width: 50px;
+    z-index: 1900;
 }
 
 /*--------------- Seccion ¿Quienes somos? ---------------*/
