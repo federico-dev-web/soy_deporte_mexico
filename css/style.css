@@ -14,6 +14,7 @@ header {
     overflow: hidden;
     top: 0;
     width: 100%;
+    z-index: 1900;
 }
 
 nav {
@@ -29,17 +30,43 @@ nav {
 .nav_item {
     color: #0f70b4;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 20px;
+}
+
+.nav_item:hover {
+    color: black;
+    background-color: #86F166;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .logo_navbar {
-    height: 80px;
-    margin-bottom: 15px;
+    margin: auto;
+    height: 70px;
 }
 
-.descripcion {
+section {
     margin-top: 120px;
-    background: linear-gradient(168.11deg, #4FC1F1 30.44%, #C4FFD5 57.43%, #9DF6E1 89.99%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.section--h2 {
+    color: #0F70B4;
+    font-weight: 650;
+}
+
+/*-------------------------SECCION DESCRIPCION-------------------------*/
+
+.descripcion {
+    margin-top: 80px;
+    background: linear-gradient(270deg, #00AD91 2.53%, #91EF57 100.94%);
+    /* background-image: url(../assets/img/bk-index.png); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 700px;
 }
 
 .descripcion__div {
@@ -67,27 +94,130 @@ nav {
     font-weight: 600;
 }
 
-section {
-    margin-top: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.section--h2 {
-    color: #0F70B4;
-    font-weight: 650;
-}
-
-
 .imagen_descripcion {
+    z-index: 1000;
+    box-sizing: border-box;
+    position: absolute;
+    left: 52.64%;
+    right: 11.24%;
+    top: 28.49%;
+    bottom: 34.18%;
+    background: url(../assets/img/futbol-americano-wide.png);
+    background-size: 100%;
+    border-radius: 8px;
+    transform: matrix(0.99, -0.14, 0.1, 0.99, 0, 0);
+    background-repeat: no-repeat;
+}
+
+.futbol-americano-index-icon {
+    position: absolute;
+    left: 63.68%;
+    right: 29.31%;
+    top: 13.57%;
+    bottom: 77.11%;
+    width: 70px;
+    z-index: 950;
+}
+
+.futbol-index-icon {
+    position: absolute;
+    left: 92.64%;
+    right: 0.07%;
+    top: 12.01%;
+    bottom: 77.73%;
+    width: 70px;
+    z-index: 950;
+}
+
+.basket-index-icon {
+    position: absolute;
+    left: 88.54%;
+    right: 5.27%;
+    top: 37.01%;
+    bottom: 54.29%;
+    width: 70px;
+    z-index: 950;
+}
+
+.bigCircle {
+    clip-path: circle(54.5% at 77% 31%);
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    right: 0;
+    top: 0;
+    z-index: 500;
+    background: linear-gradient(180deg, #0057D8 0%, #48EA3A 100%);
+    opacity: 0.5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.greenCircle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 70%;
+    top: 550px;
+    border-radius: 50%;
+    background: #91EF57;
+    z-index: 700;
+}
+
+.blueCircle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: 500x;
+    border-radius: 50%;
+    background: #0057D8;
+    z-index: 700;
+}
+
+.zindex {
+    position: relative;
+    z-index: 1050!important;
+}
+
+.img-bg-mex {
+    position: absolute;
+    top: 61%;
+    right: 71%;
+    bottom: 0%;
+    height: 45%;
+    border-image:
+    solid rgba(28, 125, 215, 0.5);
+    z-index: 5  00;
+}
+
+#descripcion-vertical {
+    display: none;
+}
+
+.imagen-descripcion {
+    position: relative;
+    margin: auto;
     max-width: 70%;
     max-height: 70%;
     min-height: 200px;
     min-width: 200px;
-    opacity: 1;
+    z-index: 1000;
 }
+
+@media screen and (max-width: 730px) {
+    #descripcion-horizontal {
+        display: none;
+    }
+
+    #descripcion-vertical {
+        display: flex;
+    }
+}
+
+
+
+/*-------------------------SECCION DESCRIPCION-------------------------*/
+
 
 footer {
     background-color: #F8F8F8;
@@ -111,43 +241,6 @@ footer {
     width: 50px;
 }
 
-
-/*--------------- PROBANDO ---------------*/
-.Ellipse3 {
-    margin: auto;
-    border-radius: 50%;
-    min-width: 250px;
-    min-height: 250px;
-    max-width: 70vw;
-    max-height: 70vw;
-    width: 60vh;
-    height: 60vh;
-    border: 12px solid #86F166;
-}
-
-.Ellipse1 {
-
-    width: 800px;
-    height: 760px;
-    left: 772px;
-    top: 127px;
-    background: rgba(63, 197, 175, 0.5);
-}
-.Ellipse4 {
-    margin: auto;
-    border-radius: 50%;
-    min-width: 300px;
-    min-height: 300px;
-    max-width: 80vw;
-    max-height: 80vw;
-    width: 70vh;
-    height: 70vh;
-    background: rgba(0, 111, 207, 0.54);
-}
-/*--------------- PROBANDO ---------------*/
-
-
-
 /*--------------- Seccion ¿Quienes somos? ---------------*/
 
 .section_quienes_somos--h3 {
@@ -165,6 +258,40 @@ footer {
     font-size: min(6vw, 18px);
 }
 
+.objeto-carousel {
+    margin: auto;
+    width: 85%;
+    height: 500px;
+    border-radius: 40px;
+    background-color: #D9D9D9;
+}
+
+#quienesSomos-horizontal {
+    display: initial;
+}
+
+
+#quienesSomos-vertical {
+    display: none;
+}
+
+
+@media screen and (max-width: 890px) {
+    #quienesSomos-horizontal {
+        display: none;
+    }
+
+    #quienesSomos-vertical {
+        display: initial;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .objeto-carousel {
+        font-size: 12px;
+    }
+}
+
 
 /*--------------- Seccion Nuestro Objetivo ---------------*/
 
@@ -179,4 +306,212 @@ footer {
     height: 80vh;
 }
 
-/*---------------     ---------------*/
+
+#nuestro_objetivo-vertical {
+    display: none;
+}
+
+
+@media screen and (max-width: 840px) {
+    #nuestro_objetivo-vertical {
+        display: flex;
+    }
+
+    .section_nuestro_objetivo--bg {
+        background-image: none;
+    }
+
+    .section_nuestro_objetivo--ht {
+        height: auto;
+    }
+
+    .nuestro_objetivo-texto {
+        margin: 0 !important;
+        display: flex;
+        margin: auto;
+        text-align: center;
+    }
+
+}
+
+/*--------------- Seccion Nuestro Objetivo ---------------*/
+
+
+
+
+
+
+
+/*--------------- Animations ---------------*/
+
+.roll-in-right {
+	-webkit-animation: roll-in-right 2s ease-out both;
+	animation: roll-in-right 2s ease-out both;
+}
+
+@-webkit-keyframes roll-in-right {
+    0% {
+      -webkit-transform: translateX(800px) rotate(540deg);
+              transform: translateX(800px) rotate(540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-right {
+    0% {
+      -webkit-transform: translateX(800px) rotate(540deg);
+              transform: translateX(800px) rotate(540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  
+
+.bounce-in-top {
+	-webkit-animation: bounce-in-top 1.6s both;
+	animation: bounce-in-top 1.6s both;
+}
+
+@-webkit-keyframes bounce-in-top {
+    0% {
+      -webkit-transform: translateY(-500px);
+              transform: translateY(-500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(-65px);
+              transform: translateY(-65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: translateY(-28px);
+              transform: translateY(-28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes bounce-in-top {
+    0% {
+      -webkit-transform: translateY(-500px);
+              transform: translateY(-500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(-65px);
+              transform: translateY(-65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: translateY(-28px);
+              transform: translateY(-28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
+
+.swirl-in-fwd {
+	-webkit-animation: swirl-in-fwd 3s ease-out both;
+	        animation: swirl-in-fwd 3s ease-out both;
+}
+
+@-webkit-keyframes swirl-in-fwd {
+    0% {
+      -webkit-transform: rotate(-540deg) scale(0);
+              transform: rotate(-540deg) scale(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0) scale(1);
+              transform: rotate(0) scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes swirl-in-fwd {
+    0% {
+      -webkit-transform: rotate(-540deg) scale(0);
+              transform: rotate(-540deg) scale(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0) scale(1);
+              transform: rotate(0) scale(1);
+      opacity: 1;
+    }
+}
