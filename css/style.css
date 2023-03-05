@@ -358,6 +358,54 @@ footer {
     z-index: 1900;
 }
 
+.whatsapp_dialog_box {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10%;
+    bottom: 16%;
+    width: 250px;
+    height: 80px;
+    z-index: 1900;
+    -webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
+    animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
+}
+
+
+.whatsapp_dialog {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10%;
+    bottom: 16%;
+    width: 250px;
+    height: 80px;
+    z-index: 1900;
+}
+
+.whatsapp_dialog--text {
+    position: static;
+    font-family: inter-google;
+    font-weight: 600;
+    z-index: 2000;
+    -webkit-animation: jello-horizontal 1s 5 both;
+	animation: jello-horizontal 1s 5 both;
+}
+
+.whatsapp_dialog_img {
+    position: fixed;
+    right: 10.5%;
+    bottom: 17%;
+    width: 250px;
+    height: 80px;
+    z-index: 1900;
+    -webkit-animation: jello-horizontal 1s 5 both;
+	animation: jello-horizontal 1s 5 both;
+}
+
+
 .scale-in-center1 {
 	-webkit-animation: scale-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: scale-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -847,3 +895,91 @@ label {
     }
 }
 
+
+
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.85, 1.15, 1);
+        transform: scale3d(0.85, 1.15, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.1, 0.9, 1);
+        transform: scale3d(1.1, 0.9, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.85, 1.15, 1);
+        transform: scale3d(0.85, 1.15, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.1, 0.9, 1);
+        transform: scale3d(1.1, 0.9, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+@-webkit-keyframes scale-out-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+}
+@keyframes scale-out-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+}
