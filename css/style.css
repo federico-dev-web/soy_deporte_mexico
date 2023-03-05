@@ -53,7 +53,6 @@ nav {
 }
 
 section {
-    margin-top: 120px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -299,6 +298,7 @@ p, h3 {
 
 
 footer {
+    margin-top: 80px;
     background: linear-gradient(180deg, #94C021 0%, #00AD91 55%, #0F70B4 100%);
     color: #0f70b4;
 }
@@ -428,6 +428,10 @@ footer {
 
 /*--------------- Seccion ¿Quienes somos? ---------------*/
 
+.section_quienes_somos--section {
+    margin-top: 80px;
+}
+
 .section_quienes_somos--h3 {
     color: #FF8835;
     font-weight: 600;
@@ -484,6 +488,10 @@ footer {
 
 /*--------------- Seccion Nuestro Objetivo ---------------*/
 
+.section_nuestro--section {
+    margin-top: 80px;
+}
+
 .section_nuestro_objetivo--bg {
     background-image: url(../assets/img/futbol-mexico.png);
     background-position-x: 20%;
@@ -535,6 +543,10 @@ footer {
 
 /*--------------- Seccion Deporte ---------------*/
 
+.section_deportes--section{
+    margin-top: 80px;
+}
+
 .sports {
     margin-top: 40px;
     margin-bottom: 50px;
@@ -550,6 +562,10 @@ footer {
 }
 
 /*--------------- Seccion Contacto ---------------*/
+
+.section_contacto--section{
+    margin-top: 80px;
+}
 
 .formulario {
     display: flex;
