@@ -556,10 +556,114 @@ footer {
     font-family: inter-google;
 }
 
-@media screen and (max-width: 783px) {
-    
-
-}
+.swiper {
+    width: 100%;
+    padding-top: 3.125rem;
+  }
+  
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+  
+  .swiper-pagination {
+    bottom: 3.35rem !important;
+  }
+  
+  .swiper-slide {
+    width: 18.75rem;
+    height: 28.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: self-start;
+  }
+  
+  .swiper-slide h2 {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 0.625rem;
+    padding: 0 0 0 1.563rem;
+    text-transform: uppercase;
+  }
+  
+  .swiper-slide p {
+    color: #dadada;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    padding: 0 1.563rem;
+    line-height: 1.6;
+    font-size: 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .swiper-slide a {
+    margin: 1.25rem 1.563rem 3.438rem 1.563rem;
+    padding: 0.438em 1.875rem;
+    font-size: 0.9rem;
+  }
+  
+  .swiper-slide a:hover {
+    color: #005baa;
+  }
+  
+  .swiper-slide div {
+    display: none;
+    opacity: 0;
+    padding-bottom: 0.625rem;
+  }
+  
+  .swiper-slide-active div {
+    display: block;
+    opacity: 1;
+  }
+  
+  .swiper-slide--one {
+    background:
+      url(../assets/img/boxeo1.png)
+        no-repeat 50% 50% / contain;
+  }
+  
+  .swiper-slide--two {
+    background: 
+      url("../assets/img/futbolamericano1.png")
+        no-repeat 50% 50% / contain;
+  }
+  
+  .swiper-slide--three {
+    background: 
+      url("../assets/img/freestyle1.png")
+        no-repeat 50% 50% / contain;
+  }
+  
+  .swiper-slide--four {
+    background: 
+      url("../assets/img/futbolsoccer1.png")
+        no-repeat 50% 50% / contain;
+  }
+  
+  .swiper-slide--five {
+    background: 
+      url("../assets/img/basquet1.png")
+        no-repeat 50% 50% / contain;
+  }
+  
+  .swiper-3d .swiper-slide-shadow-left,
+  .swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+  }
+  
+  @media screen and (min-width: 93.75rem) {
+    .swiper {
+      width: 85%;
+    }
+  }
 
 /*--------------- Seccion Contacto ---------------*/
 
@@ -581,7 +685,7 @@ footer {
     margin: 10px auto;
     border-color: #06939F !important;
     border-radius: 6px;
-    border-width: 2px;
+    border-width: 2px!important;
     font-family: inter-google;
 }
 
