@@ -16,7 +16,7 @@
     <header class="vw-100">
         <nav class="navbar navbar-expand-lg navbar-light bg-none m-0 px-3">
             <div class="container-fluid p-0">
-                <div class="navbar_logo">
+                <div class="navbar_logo mx-1">
                     <a class="navbar-brand" href="#">
                         <img src="./assets/img/logo2.png" alt="Logo" class="logo_navbar">
                     </a>
@@ -59,23 +59,21 @@
     <section id="section_descripcion" class="descripcion">
         <div>
             <div class="row text-center d-flex justify-content-center">
-                <div class="container-fluid col-md p-5 text-start">
+                <div class="container-fluid col-md p-5 text-start w-75">
                     <div id="descripcion-vertical" class="m-auto container-fluid">
                         <img src="./assets/img/futbol-americano-ver.png" class="imagen-descripcion">
                     </div>
-                    <h2 class="descripcion__div__title zindex slide-in-left1">Acompañanos a impulsar deportistas</h2>
+                    <img src="./assets/img/logo-white.png" alt="logo" class="logo-descripcion slide-in-left1">
+                    <h2 class="descripcion__div__title zindex slide-in-left2">Comprometidos con el desarrollo deportivo</h2>
                     <br>
-                    <p class="descripcion__div__text w-100% zindex slide-in-left2">Creemos que algunos talentos
-                        necesitan de nuestro
-                        apoyo para llegar aún más lejos, entre todos podemos lograrlo.</p>
+                    <p class="descripcion__div__text w-100% zindex slide-in-left3">Creemos que algunos talentos necesitan de nuestro apoyo para llegar aún más lejos, y brindamos el acompañamiento para lograrlo.</p>
                     <br>
-                    <a href="#section_contacto"><button class="zindex btn btn-info">Contáctanos</button></a>
+                    <a href="#section_contacto"><button class="zindex btn btn-info">Conocé más</button></a>
                     <img src="./assets/img/map-index.png" class="img-bg-mex">
                 </div>
 
                 <div class="container-fluid col-md d-flex">
-                    <img id="descripcion-horizontal" src="./assets/img/futbol-americano-ver.png"
-                        class="imagen_descripcion m-auto">
+                    <img id="descripcion-horizontal" src="./assets/img/futbol-americano-ver.png" class="imagen_descripcion m-auto">
                     <img src="./assets/icons/futbol-americano.png" class="futbol-americano-index-icon swirl-in-fwd">
                     <img src="./assets/icons/futbol.png" class="futbol-index-icon roll-in-right">
                     <img src="./assets/icons/basket.png" class="basket-index-icon bounce-in-top">
@@ -97,8 +95,7 @@
                 <div class="container-fluid d-flex justify-content-center flex-column">
                     <h2 class="p-4 m-auto section--h2">¿Quienes somos?</h2>
                     <p class="p-4 m-auto section_quienes_somos--text w-100%">
-                        Somos una asociación civil mexicana comprometida con el desarrollo del deporte de niños y
-                        jovenes en situación de vulnerabilidad.
+                        Somos una asociación civil mexicana comprometida con el desarrollo del deporte de niños y jóvenes en situación de vulnerabilidad. Centralizamos la ayuda de patrocinadores, empresas y personas interesadas en ayudar a financiar esta causa que impulsa a muchos jóvenes a desarrollar el deporte en el que se destacan, generando oportunidades de crecimiento profesional de cada uno de ellos.
                     </p>
                     <div class="row container-fluid d-flex flex-row">
                         <div class="container-fluid d-flex flex-column col-md">
@@ -135,6 +132,12 @@
 
             <div id="quienesSomos-vertical">
                 <div class="container-fluid d-flex justify-content-center flex-column">
+                    <h2 class="p-4 m-auto section--h2">¿Quienes somos?</h2>
+                    <p class="p-4 m-auto section_quienes_somos--text w-100%">
+                        Somos una asociación civil mexicana comprometida con el desarrollo del deporte de niños y jóvenes en situación de vulnerabilidad. Centralizamos la ayuda de patrocinadores, empresas y personas interesadas en ayudar a financiar esta causa que impulsa a muchos jóvenes a desarrollar el deporte en el que se destacan, generando oportunidades de crecimiento profesional de cada uno de ellos.
+                    </p>
+                </div>
+                <div class="container-fluid d-flex justify-content-center flex-column mt-4">
                     <div id="carouselExampleDark" class="carousel carousel-dark slide w-100" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
@@ -284,25 +287,30 @@
     <!--  Seccion de Contacto -->
     <div id="section_contacto">
         <section class="section_contacto--section">
-            <div class="container-fluid d-flex justify-content-center flex-column">
-                <h2 class="p-4 m-auto section--h2">Contacto</h2>
-                <form id="form" class="formulario">
-                    <div>
-                        <label for="nombre" class="campo">Nombre:</label>
-                        <input class="campo border" name="name" type="text" placeholder=" Nombre completo" required>
-                    </div>
-                    <div>
-                        <label for="correo" class="campo">E-mail:</label>
-                        <input class="campo border" name="email" type="email" placeholder=" Ingrese su email" required>
-                    </div>
-
-                    <div class="d-flex justify-content-center flex-column">
-                        <label for="mensaje" class="campo">Mensaje:</label>
-                        <textarea class="campo border" name="message" cols="30" rows="5" placeholder=" -Escribe Aquí-"
-                            required></textarea>
-                        <input class="btn btn-info m-auto" type="submit" id="button" value="Enviar">
-                    </div>
-                </form>
+            <div class="container-fluid d-flex justify-content-center">
+                <div class="col-4 mt-5 contacto--horizontal">
+                    <img src="./assets/img/contacto-futbol.png" alt="" class="w-100">
+                </div>
+                <div class="col container-fluid d-flex justify-content-center flex-column">
+                    <h2 class="p-4 m-auto section--h2">Contacto</h2>
+                    <form id="form" class="formulario">
+                        <div>
+                            <label for="nombre" class="campo">Nombre:</label>
+                            <input class="campo border" name="name" type="text" placeholder=" Nombre completo" required>
+                        </div>
+                        <div>
+                            <label for="correo" class="campo">E-mail:</label>
+                            <input class="campo border" name="email" type="email" placeholder=" Ingrese su email" required>
+                        </div>
+    
+                        <div class="d-flex justify-content-center flex-column">
+                            <label for="mensaje" class="campo">Mensaje:</label>
+                            <textarea class="campo border" name="message" cols="30" rows="5" placeholder=" -Escribe Aquí-"
+                                required></textarea>
+                            <input class="btn btn-info m-auto" type="submit" id="button" value="Enviar">
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
         <div class="container-fluid">
@@ -316,10 +324,15 @@
     <footer>
         <div class="container text-center">
             <div id="locationSocial" class="row">
-                <div id="empty" class="col">
+                <div id="empty" class="col d-flex align-content-center p-2">
+                    <a href="#" class="w-100 m-auto">
+                        <img src="./assets/img/logo-white.png" alt="logo" class="w-100 m-auto logo-footer--vertical">
+                    </a>
                 </div>
                 <div class="col-6">
                     <div class="socialFull">
+                        <a href="https://wa.me/5215624584365?text=Hola%21%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20de%20las%20actividades%20de%20Soy%20Deporte%21" target="_blank" class="text-white"><img
+                            class="footer_logo" src="./assets/icons/whatsapp-white.png" alt="whatsapp link"></a>
                         <a href="https://www.instagram.com/soydeporte234/" target="_blank" class="text-white"><img
                                 class="footer_logo" src="./assets/icons/instagram1.png" alt="instagram link"></a>
                         <a href="https://www.tiktok.com/@soydeporte234" target="_blank" class="text-white"><img

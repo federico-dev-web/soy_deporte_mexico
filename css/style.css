@@ -48,6 +48,7 @@ nav {
 }
 
 .logo_navbar {
+    padding-left: 30px;
     margin: auto;
     height: 70px;
 }
@@ -89,11 +90,21 @@ section {
     width: 50%;
 }
 
+.logo-descripcion {
+    position: relative;
+    z-index: 1800;
+    max-height: 40%;
+    max-width: 100%;
+    margin: auto;
+    padding: 30px;
+}
+
 .descripcion__div__title {
     font-family: inter-google;
     color: #F7F7F7;
-    font-size: min(12vw, 65px);
+    font-size: min(8.5vw, 50px);
     font-weight: 700;
+    max-width: 100%;
 }
 
 .descripcion__div__text {
@@ -263,6 +274,16 @@ section {
 
 
 @media screen and (max-width: 730px) {
+
+    .logo-descripcion {
+        display: none;
+    }
+
+    .descripcion__div__title {
+        text-align: center;
+        margin: auto;
+    }
+
     #descripcion-horizontal {
         display: none;
     }
@@ -311,7 +332,7 @@ footer {
 
 .footer_logo {
     width: 50px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .socialFull {
@@ -406,6 +427,16 @@ footer {
 }
 
 
+@media screen and (max-width: 600px) {
+    .logo-footer--vertical {
+        padding-left: 60px;
+        padding-top: 40px;
+        padding-right: 60px;
+        padding-bottom: 0px;
+    }
+}
+
+
 .scale-in-center1 {
 	-webkit-animation: scale-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: scale-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -424,6 +455,11 @@ footer {
 .slide-in-left2 {
 	-webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-in-left3 {
+	-webkit-animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*--------------- Seccion ¿Quienes somos? ---------------*/
@@ -680,13 +716,20 @@ footer {
 
 .campo {
     display: block;
-    width: 50%;
+    width: 75%;
     padding: 1px;
     margin: 10px auto;
     border-color: #06939F !important;
     border-radius: 6px;
     border-width: 2px!important;
     font-family: inter-google;
+}
+
+
+@media screen and (max-width: 990px) {
+    .contacto--horizontal {
+        display: none;
+    }
 }
 
 label {
