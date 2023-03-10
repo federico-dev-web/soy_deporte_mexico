@@ -215,9 +215,9 @@ section {
 }
 
 
-.zindex2 {
-    position: relative;
-    z-index: 2000 !important;
+.index2 {
+    position: static;
+    z-index: 2100 !important;
 }
 
 .img-bg-mex {
@@ -585,9 +585,9 @@ footer {
 
 /*--------------- Seccion Deporte ---------------*/
 
-.section_deportes--section{
+/* .section_deportes--section{
     margin-top: 80px;
-}
+} */
 
 .sports {
     margin-top: 40px;
@@ -600,7 +600,7 @@ footer {
 
 .swiper {
     width: 100%;
-    padding-top: 3.125rem;
+/*     padding-top: 3.125rem; */
   }
   
   .swiper-pagination-bullet,
@@ -614,12 +614,19 @@ footer {
   
   .swiper-slide {
     width: 18.75rem;
-    height: 28.125rem;
+    height: 23.125rem;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: self-start;
   }
+
+  @media screen and (max-width: 767) {
+    .swiper {
+        height: 20.125rem;
+    }
+  }
+  
   
   .swiper-slide h2 {
     color: #fff;
