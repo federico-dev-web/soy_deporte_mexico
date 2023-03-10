@@ -21,3 +21,25 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+
+
+let scrollPos = 2200;
+let elemento = document.getElementById('whatsapp_icon')
+
+function checkPosition() {
+  let windowY = window.scrollY;
+  if (windowY > scrollPos) {
+    // Scrolling UP
+    elemento.classList.add('whatsapp-is-hidden');
+  } else {
+    // Scrolling DOWN
+    elemento.classList.remove('whatsapp-is-hidden');
+  }
+}
+
+
+const printPosition = () => { 
+  console.log(window.scrollY);
+}
+
+window.addEventListener('scroll', checkPosition);
