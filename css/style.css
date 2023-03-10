@@ -214,6 +214,12 @@ section {
     z-index: 1050 !important;
 }
 
+
+.zindex2 {
+    position: relative;
+    z-index: 2000 !important;
+}
+
 .img-bg-mex {
     position: absolute;
     top: 68.3%;
