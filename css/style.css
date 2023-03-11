@@ -314,6 +314,27 @@ section {
     }
 }
 
+
+@media screen and (max-width: 650px) {
+    .descripcion__div__title {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .descripcion__div__container{
+        width: 100% !important;
+    }
+
+    .descripcion__div__title {
+        font-size: 25px;
+        width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 p, h3 {
     font-family: inter-google;
 }
